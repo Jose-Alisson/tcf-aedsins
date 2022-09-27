@@ -1,0 +1,45 @@
+<header class="des-hea" style="background-image: url('{{ img_he }}');">
+  <div class="he-con">
+    <h1>{{ currentRouter }}</h1>
+    <p>{{ subTitle }}</p>
+    <input type="button" value="Saiba Mais" />
+  </div>
+  <div class="navbar" id="navbar">
+    <div class="nav-con">
+      <div class="nav-min-con">
+        <div class="logo">
+          <h1>aedsins</h1>
+        </div>
+        <div class="menu-anb" (click)="expanded()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+      <div class="nav-itens">
+        <ul>
+          <li>
+            <a [routerLink]="['aedsins']">aedsins</a>
+          </li>
+          <li>
+            <a [routerLink]="['metaverso']">metaverso</a>
+          </li>
+          <li>
+            <a [routerLink]="['qled']">qled</a>
+          </li>
+          <li>
+            <a [routerLink]="['sobre']">sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="page-con">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <h2>Trabalho Conclusivo do Fundamental 2022</h2>
+</div>

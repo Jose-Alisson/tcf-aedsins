@@ -1,0 +1,35 @@
+.ae-con, .me-con, .ql-con, .so-con{
+  width: 648px;
+  margin: auto;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 6.2rem;
+}
+
+h1,h2{
+  font-family: 'Calibri';
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: 'Calibri';
+}
+
+@media(max-width: 695px){
+  .ae-con, .me-con, .ql-con, .so-con{
+    width: auto;
+    margin: 20px;
+  }
+}
+
+.nomes , .arquivos{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.nomes li, .arquivos li {
+  font-family: Calibri;
+}
