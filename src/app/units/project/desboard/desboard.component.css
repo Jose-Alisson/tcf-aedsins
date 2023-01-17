@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+:root{
+  --whiteColor: #fff;
+}
+
+.des-hea{
+  background: rgba(0, 0, 0, 0.7);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.nav-min-con{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-anb{
+  display: none;
+  cursor: pointer;
+}
+
+.menu-anb div{
+  background: white;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+.logo h1 , .he-con h1{
+  text-transform: uppercase;
+  font-family: 'Bebas', sans-serif;
+  color: white;
+}
+
+
+.nav-con{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  height: 70px;
+  align-items: center;
+}
+
+.nav-itens ul{
+  list-style: none;
+  display: flex;
+}
+
+.nav-itens ul li,a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font: 2.1rem;
+}
+
+.nav-itens ul li,a:hover{
+  color: #9563A6;
+}
+
+.nav-itens ul li{
+  margin: 20px 5px;
+}
+
+.he-con{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.he-con h1{
+  font-size: 6.4rem;
+}
+
+.he-con p {
+  font-size: 2.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.he-con input[type = button] {
+  background-color: #9563A6;
+  color: whiter;
+  border: 0;
+  width: 24.0rem;
+  height: 5.0rem;
+  border-radius: 20px;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 2.4rem;
+  box-shadow: 2px 2px 4px #000000;
+  cursor: pointer;
+}
+
+@media(max-width: 450px){
+
+  .navbar.on{
+    height: 20vh;
+    transition: 1s;
+    position: fixed;
+    background-color: rgb(22,22,22);
+  }
+
+  .nav-itens{
+    display: none;
+  }
+
+  .nav-itens.on{
+    display: block;
+    scroll-behavior: auto;
+  }
+
+  .menu-anb{
+    display: block;
+  }
+
+  .nav-min-con{
+    height: 70px;
+    transition: .2s;
+  }
+
+  .nav-min-con.on{
+    margin-top: 5px;
+    transition: .2s;
+    width: 82%;
+    padding: 10px;
+  }
+
+  .nav-con{
+    flex-direction: column;
+    height: 98%;
+    align-items: center;
+  }
+}
+
+
+.footer{
+  height: 70px;
+  background: rgb(22,22,22);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: 'Roboto';
+  color: white;
+  text-align: center;
+}
